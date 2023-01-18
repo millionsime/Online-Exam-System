@@ -23,6 +23,7 @@ class CreateExamsTable extends Migration
             $table->string('exam_date');
 
             $table->timestamps();
+            $table->softDeletes($column = 'deleted_at', $precision = 0);
         });
     }
 

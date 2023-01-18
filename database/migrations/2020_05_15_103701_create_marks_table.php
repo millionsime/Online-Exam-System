@@ -26,6 +26,7 @@ class CreateMarksTable extends Migration
             $table->float('grade');
 
             $table->timestamps();
+            $table->softDeletes($column = 'deleted_at', $precision = 0);
         });
     }
 

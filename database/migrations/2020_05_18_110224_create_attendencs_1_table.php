@@ -20,6 +20,7 @@ class CreateAttendencs1Table extends Migration
 
             $table->integer('student_id')->unsigned();
             $table->foreign('student_id', 'fk_256_user_student_id_attendencs')->references('id')->on('users');
+            $table->softDeletes($column = 'deleted_at', $precision = 0);
 
             $table->timestamps();
         });

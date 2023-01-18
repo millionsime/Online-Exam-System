@@ -3,8 +3,8 @@
 @section('content')
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <h1 class="text-center" style="color: white">E-Exam</h1>
-            <h3 class="text-center" style="color: white">Miskolc University</h3>
+            <h1 class="text-center" style="color: white">Sample Exit Exam Questions</h1>
+            <h3 class="text-center" style="color: white">Ethio Exit Exam Portal</h3>
             <br />
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
@@ -65,6 +65,10 @@
                                         class="btn btn-primary">
                                     Login
                                 </button>
+                                <button type="submit"
+                                        class="btn">
+                                        <a href="{{ route('auth.register') }}">Regsiter</a>
+                                </button>
 
                                 <br>
                                 <a href="{{ route('auth.password.reset') }}">Forgot password</a>
@@ -73,6 +77,7 @@
 
                             </div>
                         </div>
+                        
                     </form>
                 </div>
             </div>
